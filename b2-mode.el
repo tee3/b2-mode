@@ -179,6 +179,7 @@
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("[Jj]am\\(base\\|root\\|file\\)\\'" . b2-mode))
 
+;;;###autoload
 (define-derived-mode b2-mode prog-mode "B2"
   "A simple major mode for B2 (Boost.Build) files."
   :syntax-table b2-mode-syntax-table
