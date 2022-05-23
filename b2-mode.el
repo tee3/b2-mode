@@ -191,7 +191,8 @@
               '(("*Imports*" "^\\s-*import\\s-+\\([-[:word:]]+\\) ;" 1)
                 ("*Variables*" "^\\s-*\\(?:local \\)?\\([-[:word:]]+\\)\\s-+[=;]" 1)
                 ("*Rules*" "^\\s-*\\(?:local \\)?rule +\\([-[:word:]]+\\) +" 1)
-                ("*Actions*" "^\\s-*actions\\s-+\\([-[:word:]]+\\)" 1))))
+                ("*Actions*" "^\\s-*actions\\s-+\\([-[:word:]]+\\)" 1)
+                ("*Targets*" "^\\s-*\\(alias\\|doxygen\\|exe\\|lib\\install\\|run\\|unit-test\\obj\\|package\\.install\\)\\s-+\\([-[:word:]]+\\)" 2))))
 
 (provide 'b2-mode)
 ;;; b2-mode.el ends here
