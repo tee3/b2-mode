@@ -38,8 +38,7 @@
     (let ((OPERATORS '("=" "!=" "<" ">" "<=" ">="
                        "!"
                        "&&" "||"))
-          (BUILTINS '(
-                      "DEPENDS"
+          (BUILTINS '("DEPENDS"
                       "INCLUDE"
                       "ALWAYS"
                       "LEAVES"
@@ -192,8 +191,7 @@
               '(("*Imports*" "^\\s-*import\\s-+\\([-[:word:]]+\\) ;" 1)
                 ("*Variables*" "^\\s-*\\(?:local \\)?\\([-[:word:]]+\\)\\s-+[=;]" 1)
                 ("*Rules*" "^\\s-*\\(?:local \\)?rule +\\([-[:word:]]+\\) +" 1)
-                ("*Actions*" "^\\s-*actions\\s-+\\([-[:word:]]+\\)" 1)
-                )))
+                ("*Actions*" "^\\s-*actions\\s-+\\([-[:word:]]+\\)" 1))))
 
 (provide 'b2-mode)
 ;;; b2-mode.el ends here
